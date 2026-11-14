@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The grill, lid closed: our own drawing of an OG901-style grill (no vendor photo, no logo).
+  It keeps the photo canvas (720×715) and its panel layout, because GrillCard.kt draws the live
+  display, the mode LEDs and the Woodfire flame at fixed fractions of this canvas:
+  display 300–418 × 578–619, LEDs x 243–252, flame 265–288 × 578–617.
+  A local build can swap in its own picture: app/src/debug/res/drawable-nodpi/grill_closed.png.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="720dp" android:height="715dp"
+    android:viewportWidth="720" android:viewportHeight="715">
+
+    <!-- Ground shadow -->
+    <path android:fillColor="#000000" android:fillAlpha="0.16"
+        android:pathData="M60,704a300,9 0,1 0,600 0a300,9 0,1 0,-600 0z"/>
+
+    <!-- Side smoke box (right) and the hood's dark left flank -->
+    <path android:fillColor="#2B2F35" android:pathData="M598,262h80a14,14 0,0 1,14 14v244h-94z"/>
+    <path android:fillColor="#3A3F46" android:pathData="M688,394h18a5,5 0,0 1,5 5v18a5,5 0,0 1,-5 5h-18z"/>
+    <path android:fillColor="#23272C" android:pathData="M60,286a16,16 0,0 1,16 -16h40v250h-56z"/>
+
+    <!-- Hood -->
+    <path android:pathData="M88,528L104,300Q110,246 168,240L232,238Q236,206 268,204L452,204Q484,206 488,238L552,240Q610,246 616,300L632,528Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="204" android:endX="0" android:endY="528">
+                <item android:offset="0" android:color="#FF7FA3CB"/>
+                <item android:offset="0.45" android:color="#FF5A7EA7"/>
+                <item android:offset="1" android:color="#FF3F6086"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Light catching the shoulders -->
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.14"
+        android:pathData="M112,296Q118,256 170,252L236,250L236,262L172,266Q130,270 124,300L120,350L108,350Z"/>
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.10"
+        android:pathData="M244,240Q246,216 270,216L450,216Q474,216 476,240Z"/>
+
+    <!-- Top handle -->
+    <path android:fillColor="#1E2226" android:pathData="M248,192h224v14h-224z"/>
+    <path android:pathData="M248,168h224a8,8 0,0 1,8 8v12a8,8 0,0 1,-8 8h-224a8,8 0,0 1,-8 -8v-12a8,8 0,0 1,8 -8z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="168" android:endX="0" android:endY="196">
+                <item android:offset="0" android:color="#FFEEF1F5"/>
+                <item android:offset="1" android:color="#FF98A1AB"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Our flame, pressed into the hood -->
+    <group android:translateX="322.2" android:translateY="285" android:scaleX="0.7" android:scaleY="0.7">
+        <path android:fillColor="#FFFFFF" android:fillAlpha="0.24"
+            android:pathData="M54,24C60,36 72,44 72,60C72,72 64,82 54,82C44,82 36,72 36,61C36,52 41,46 45,41C45,48 48,52 52,53C50,44 51,33 54,24Z"/>
+    </group>
+
+    <!-- Front window and its handle -->
+    <path android:pathData="M132,528L140,400Q142,384 158,384L562,384Q578,384 580,400L588,528Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="384" android:endX="0" android:endY="528">
+                <item android:offset="0" android:color="#FF0E1013"/>
+                <item android:offset="1" android:color="#FF1C2026"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.06" android:pathData="M150,400L560,400L566,430L146,430Z"/>
+    <path android:fillColor="#0A0B0D" android:fillAlpha="0.6" android:pathData="M156,466h408a6,6 0,0 1,6 6v4h-420v-4a6,6 0,0 1,6 -6z"/>
+    <path android:pathData="M156,446h408a6,6 0,0 1,6 6v12a6,6 0,0 1,-6 6h-408a6,6 0,0 1,-6 -6v-12a6,6 0,0 1,6 -6z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="446" android:endX="0" android:endY="470">
+                <item android:offset="0" android:color="#FFE9EDF1"/>
+                <item android:offset="1" android:color="#FF8F98A2"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Base: rim, body, feet -->
+    <path android:pathData="M36,505h648a18,18 0,0 1,18 18v10a18,18 0,0 1,-18 18h-648a18,18 0,0 1,-18 -18v-10a18,18 0,0 1,18 -18z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="505" android:endX="0" android:endY="551">
+                <item android:offset="0" android:color="#FF474D55"/>
+                <item android:offset="1" android:color="#FF262A2F"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:pathData="M30,548L690,548L668,684Q666,692 656,692L64,692Q54,692 52,684Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="548" android:endX="0" android:endY="692">
+                <item android:offset="0" android:color="#FF2C3036"/>
+                <item android:offset="1" android:color="#FF191C20"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:fillColor="#111316" android:pathData="M92,690h58v14a4,4 0,0 1,-4 4h-50a4,4 0,0 1,-4 -4z"/>
+    <path android:fillColor="#111316" android:pathData="M570,690h58v14a4,4 0,0 1,-4 4h-50a4,4 0,0 1,-4 -4z"/>
+
+    <!-- Control panel -->
+    <path android:fillColor="#15171A" android:strokeColor="#3D434B" android:strokeWidth="2"
+        android:pathData="M166,558h424a10,10 0,0 1,10 10v84a10,10 0,0 1,-10 10h-424a10,10 0,0 1,-10 -10v-84a10,10 0,0 1,10 -10z"/>
+    <!-- Power -->
+    <path android:strokeColor="#8C949E" android:strokeWidth="2" android:fillColor="#00000000"
+        android:pathData="M180,590a13,13 0,1 0,26 0a13,13 0,1 0,-26 0z"/>
+    <path android:strokeColor="#C9CFD6" android:strokeWidth="1.8" android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M188.6,585.2a6.5,6.5 0,1 0,8.8 0M193,582v7"/>
+    <!-- Mode names beside the LEDs -->
+    <path android:strokeColor="#6B737D" android:strokeWidth="1.6" android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M216,580.6h22M222,586.4h16M218,592.2h20M222,598h16M224,603.8h14M214,609.8h24M220,615.8h18"/>
+    <!-- LED slots (GrillCard lights the active one) -->
+    <path android:fillColor="#191B1F" android:pathData="M243,578h9v40h-9z"/>
+    <!-- Woodfire flame -->
+    <path android:fillColor="#E8EEF6"
+        android:pathData="M276.5,580C280,588 288,593 288,603C288,610 283,616 276.5,616C270,616 265,610 265,603.5C265,598 268,594 271,591C271,595 273,598 275.5,598.5C274,592 274.5,586 276.5,580Z"/>
+    <!-- Display bezel (GrillCard draws the live digits inside) -->
+    <path android:fillColor="#0D0F12" android:strokeColor="#2E333A" android:strokeWidth="1.5"
+        android:pathData="M300,574h118a4,4 0,0 1,4 4v41a4,4 0,0 1,-4 4h-118a4,4 0,0 1,-4 -4v-41a4,4 0,0 1,4 -4z"/>
+    <!-- Buttons under the display -->
+    <path android:strokeColor="#59606A" android:strokeWidth="1.5" android:fillColor="#00000000"
+        android:pathData="M216,628h34a6,6 0,0 1,0 12h-34a6,6 0,0 1,0 -12zM262,628h34a6,6 0,0 1,0 12h-34a6,6 0,0 1,0 -12zM322,628h34a6,6 0,0 1,0 12h-34a6,6 0,0 1,0 -12zM370,628h34a6,6 0,0 1,0 12h-34a6,6 0,0 1,0 -12z"/>
+    <!-- Dial -->
+    <path android:fillColor="#25292E" android:pathData="M427,600a28,28 0,1 0,56 0a28,28 0,1 0,-56 0z"/>
+    <path android:pathData="M432,600a23,23 0,1 0,46 0a23,23 0,1 0,-46 0z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="440" android:startY="580" android:endX="472" android:endY="622">
+                <item android:offset="0" android:color="#FFF3F5F8"/>
+                <item android:offset="1" android:color="#FF8E97A1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:fillColor="#5D6570" android:pathData="M453.5,582h3v9h-3z"/>
+    <!-- Start / stop and the probe jack -->
+    <path android:strokeColor="#8C949E" android:strokeWidth="2" android:fillColor="#00000000"
+        android:pathData="M488,589a12,12 0,1 0,24 0a12,12 0,1 0,-24 0z"/>
+    <path android:strokeColor="#6B737D" android:strokeWidth="1.6" android:fillColor="#00000000"
+        android:pathData="M491,625a9,9 0,1 0,18 0a9,9 0,1 0,-18 0zM496,625h8"/>
+</vector>

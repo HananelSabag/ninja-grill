@@ -1,0 +1,25 @@
+*.iml
+.gradle
+/local.properties
+/secrets.properties
+/.secrets/
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+.kotlin
+# The owner's own grill pictures (a store's product photos): local debug builds only, never published.
+/app/src/debug/res/drawable-nodpi/grill_*.png
+# Release signing (key and passwords live outside the repo).
+/keystore.properties
+*.jks
+*.keystore

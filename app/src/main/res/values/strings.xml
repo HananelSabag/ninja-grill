@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ninja Grill</string>
+
+    <!-- phases -->
+    <string name="phase_off">כבוי</string>
+    <string name="phase_idle">מוכן</string>
+    <string name="phase_ignition">מצית</string>
+    <string name="phase_preheat">מחמם</string>
+    <string name="phase_cooking">מבשל</string>
+    <string name="phase_resting">במנוחה</string>
+    <string name="phase_done">הסתיים</string>
+    <string name="phase_waiting_lid">צריך לסגור את המכסה</string>
+    <string name="phase_unknown">לא ידוע</string>
+    <string name="phase_searching">מחפש את הגריל…</string>
+    <string name="phase_searching_hint">בדוק שהגריל דלוק וקרוב, ושאפליקציית Ninja סגורה</string>
+
+    <!-- prompts on the grill's display -->
+    <string name="prompt_add_food">אפשר להכניס את האוכל</string>
+    <string name="prompt_flip_food">זמן להפוך</string>
+    <string name="prompt_done">הבישול הסתיים</string>
+    <string name="prompt_get_food">אפשר להוציא את האוכל</string>
+
+    <!-- modes -->
+    <string name="mode_grill">גריל</string>
+    <string name="mode_smoker">מעשנה</string>
+    <string name="mode_air_crisp">טיגון באוויר</string>
+    <string name="mode_bake">אפייה</string>
+    <string name="mode_roast">צלייה</string>
+    <string name="mode_broil">צלייה עליונה</string>
+    <string name="mode_dehydrate">ייבוש</string>
+    <string name="mode_reheat">חימום</string>
+    <string name="mode_griddle">פלנצ\'ה</string>
+    <string name="heat_lo">נמוך</string>
+    <string name="heat_med">בינוני</string>
+    <string name="heat_hi">גבוה</string>
+
+    <!-- dashboard -->
+    <string name="time_left">נשאר</string>
+    <string name="woodfire">עשן Woodfire</string>
+    <string name="lid_open">המכסה פתוח</string>
+    <string name="lid_closed">המכסה סגור</string>
+    <string name="probes_title">מדחומים</string>
+    <string name="probe_n">פנימי %1$d</string>
+    <string name="probe_unplugged">לא מחובר</string>
+    <string name="probe_target">יעד %1$s</string>
+    <string name="temps_title">טמפרטורות</string>
+    <string name="temp_grill">גריל</string>
+    <string name="temp_air">אוויר</string>
+    <string name="temp_smoke">קופסת עשן</string>
+    <string name="approx_hint">הערכה לפי Bluetooth</string>
+    <string name="details_title">פרטים</string>
+    <string name="detail_model">דגם</string>
+    <string name="detail_serial">מספר סידורי</string>
+    <string name="detail_signal">קליטת Wi-Fi</string>
+    <string name="detail_ble">Bluetooth</string>
+    <string name="detail_cloud">ענן</string>
+    <string name="source_ble">Bluetooth</string>
+    <string name="source_cloud">ענן</string>
+    <string name="ago_now">עכשיו</string>
+    <string name="ago_seconds">לפני %1$d שניות</string>
+    <string name="ago_minutes">לפני %1$d דקות</string>
+    <string name="ago_hours">לפני %1$d שעות</string>
+    <string name="not_heard">לא זוהה</string>
+    <string name="cloud_online">מחובר</string>
+    <string name="cloud_offline">מנותק</string>
+    <string name="refresh">רענון</string>
+    <string name="settings">הגדרות</string>
+
+    <!-- control -->
+    <string name="cook_new">בישול חדש</string>
+    <string name="cook_edit_title">שינוי הבישול</string>
+    <string name="cook_edit">שינוי</string>
+    <string name="cook_start">התחל</string>
+    <string name="cook_update">עדכן</string>
+    <string name="stop">עצור</string>
+    <string name="skip_preheat">דלג על החימום</string>
+    <string name="wake">הער את הגריל</string>
+    <string name="sheet_mode">מצב</string>
+    <string name="sheet_heat">עוצמה</string>
+    <string name="sheet_temp">טמפרטורה</string>
+    <string name="sheet_time">זמן בישול</string>
+    <string name="sheet_time_left">זמן שנשאר</string>
+    <string name="sheet_woodfire">טעם עשן (Woodfire)</string>
+    <string name="sheet_woodfire_required">תמיד פעיל במעשנה</string>
+    <string name="sheet_woodfire_na">לא זמין במצב הזה</string>
+    <string name="sheet_woodfire_hint">צריך פלטים בקופסת העשן</string>
+    <string name="sheet_skip_preheat">דילוג על חימום מוקדם</string>
+    <string name="sheet_probe_target">יעד למדחום %1$d</string>
+    <string name="sheet_no_probes">אין מדחומים במצב הזה</string>
+    <string name="confirm_start_title">להתחיל לבשל?</string>
+    <string name="confirm_update_title">לעדכן את הבישול?</string>
+    <string name="confirm_hint">ודא שהמכסה סגור ושאין ליד הגריל שום דבר דליק.</string>
+    <string name="cancel">ביטול</string>
+    <string name="cmd_busy">שולח…</string>
+    <string name="cmd_done_via">בוצע (דרך %1$s)</string>
+    <string name="cmd_failed">לא הצליח: %1$s</string>
+    <string name="no_route">אין חיבור לגריל: צריך Bluetooth בטווח או חיבור לענן</string>
+    <string name="minutes_short">%1$d דק\'</string>
+    <string name="hours_minutes">%1$s שעות</string>
+
+    <!-- external thermometer (Tempwise) -->
+    <string name="ext_title">Tempwise</string>
+    <string name="ext_probe_n">Tempwise %1$d</string>
+    <string name="ext_connected">מחובר</string>
+    <string name="ext_searching">מתחבר…</string>
+    <string name="ext_ambient">סביבה %1$s</string>
+    <string name="ext_battery">סוללה %1$d%%</string>
+    <string name="ext_raw">נתונים אחרונים: %1$s</string>
+    <string name="settings_external">מדחום חיצוני</string>
+    <string name="ext_none">עדיין לא נבחר מדחום</string>
+    <string name="ext_find">חיפוש מדחום</string>
+    <string name="ext_remove">הסרה</string>
+    <string name="finder_title">חיפוש מדחום</string>
+    <string name="finder_hint">הדלק את המדחום וקרב אותו לטלפון. מכשירים שנראים כמו Tempwise מופיעים ראשונים. אפליקציית Tempwise צריכה להיות סגורה.</string>
+    <string name="finder_likely">כנראה Tempwise</string>
+    <string name="finder_unnamed">(בלי שם)</string>
+    <string name="finder_connecting">מתחבר…</string>
+    <string name="finder_connected">מחובר, מחכה לנתונים</string>
+    <string name="finder_services">שירותים ומאפיינים</string>
+    <string name="finder_live">נתונים בזמן אמת</string>
+    <string name="finder_parsed">פענוח: %1$s</string>
+    <string name="finder_use">להשתמש במדחום הזה</string>
+    <string name="back">חזרה</string>
+
+    <!-- setup problems -->
+    <string name="need_bt_permission">צריך הרשאת Bluetooth כדי להתחבר לגריל</string>
+    <string name="grant">אישור</string>
+    <string name="bt_off">ה-Bluetooth בטלפון כבוי</string>
+    <string name="no_key">חסר מפתח Bluetooth. אפשר להוסיף אותו בהגדרות</string>
+    <string name="not_logged_in">לא מחובר לחשבון Ninja, אז הענן לא פעיל</string>
+    <string name="login_now">התחברות</string>
+    <string name="cloud_error">אין חיבור לענן: %1$s</string>
+    <string name="session_expired">צריך להתחבר שוב לחשבון Ninja</string>
+
+    <!-- login -->
+    <string name="login_title">Ninja Grill</string>
+    <string name="login_subtitle">התחבר עם החשבון של אפליקציית Ninja. זה הצעד הראשון המומלץ: הגריל נשלט ונצפה מכל מקום</string>
+    <string name="email">אימייל</string>
+    <string name="password">סיסמה</string>
+    <string name="login">התחברות</string>
+    <string name="logging_in">מתחבר…</string>
+    <string name="login_privacy">הסיסמה נשלחת רק לשרת של Ninja ולא נשמרת בטלפון. נשמר רק אסימון התחברות מוצפן.</string>
+    <string name="login_skip">להמשיך עם Bluetooth בלבד</string>
+    <string name="login_skip_hint">ליד הגריל ובלי אינטרנט. צריך מפתח Bluetooth חד-פעמי מהעותק שלך של אפליקציית Ninja (ההוראות במדריך). אפשר להוסיף אותו גם אחר כך בהגדרות</string>
+    <string name="welcome_need_title">מה צריך לפני שמתחילים</string>
+    <string name="welcome_need_grill">גריל Ninja Woodfire Pro Connect XL ‏(OG901) שמחובר ל-Wi-Fi דרך האפליקציה הרשמית של Ninja</string>
+    <string name="welcome_need_account">חשבון Ninja. האפליקציה הרשמית לא זמינה ב-Google Play בישראל, ומתקינים אותה כקובץ APK</string>
+    <string name="welcome_need_together">אפשר להשאיר את האפליקציה הרשמית מותקנת ופתוחה: השתיים עובדות יחד ולא מפריעות זו לזו</string>
+    <string name="login_failed_credentials">האימייל או הסיסמה לא נכונים</string>
+    <string name="login_failed_other">ההתחברות לא הצליחה: %1$s</string>
+
+    <!-- settings -->
+    <string name="settings_channel">חיבור לגריל</string>
+    <string name="channel_auto">אוטומטי</string>
+    <string name="channel_cloud">ענן</string>
+    <string name="channel_ble">Bluetooth</string>
+    <string name="channel_hint">Bluetooth ליד הגריל, ענן מכל מקום</string>
+    <string name="settings_units">יחידות</string>
+    <string name="settings_ble_key">מפתח Bluetooth</string>
+    <string name="key_loaded">נטען · גריל %1$s</string>
+    <string name="key_missing">לא נטען</string>
+    <string name="key_paste_hint">הדבק כאן את מפתח ה-Bluetooth</string>
+    <string name="grill_address_hint">כתובת הגריל (AA:BB:…)</string>
+    <string name="save">שמירה</string>
+    <string name="key_saved">המפתח נשמר</string>
+    <string name="key_invalid">המפתח לא תקין: %1$s</string>
+    <string name="settings_account">חשבון Ninja</string>
+    <string name="account_signed_in">מחובר בתור %1$s</string>
+    <string name="account_signed_out">לא מחובר</string>
+    <string name="logout">התנתקות</string>
+    <string name="version">גרסה %1$s</string>
+
+    <!-- connection truth, probe hero, settings -->
+    <string name="conn_searching">מחפש…</string>
+    <string name="conn_off">הגריל כבוי</string>
+    <string name="conn_online_via">מחובר · %1$s</string>
+    <string name="conn_disabled">כבוי בהגדרות</string>
+    <string name="conn_card_title">חיבור</string>
+    <string name="ble_heard">בטווח · %1$s</string>
+    <string name="ble_not_heard">לא בטווח</string>
+    <string name="cloud_no_account">לא מחובר לחשבון</string>
+    <string name="cloud_connected_ago">מחובר · עודכן %1$s</string>
+    <string name="grill_off_title">הגריל כבוי</string>
+    <string name="grill_off_hint">הגריל כבה מעצמו אחרי זמן בלי שימוש. אפשר להדליק אותו בלוח שלו</string>
+    <string name="grill_off_hint_wake">הגריל כבה מעצמו אחרי זמן בלי שימוש. אפשר להדליק אותו מכאן, בכפתור למטה</string>
+    <string name="grill_ready_hint">מוכן לבישול</string>
+    <string name="probe_lead_ninja">מדחום %1$d · Ninja</string>
+    <string name="probe_none_title">אין מדחום מחובר</string>
+    <string name="probe_none_hint">חבר את המדחום של הגריל, או בחר מדחום Tempwise בהגדרות</string>
+    <string name="probe_no_target">לא הוגדר יעד</string>
+    <string name="probe_reached">הגיע ליעד</string>
+    <string name="probe_pull_now">אפשר להוציא</string>
+    <string name="probe_to_pull">עוד %1$s עד שמוציאים</string>
+    <string name="track_pull">הוצאה %1$s</string>
+    <string name="carryover_note">אחרי ההוצאה הבשר ממשיך לעלות בערך %1$d°</string>
+    <string name="action_off">הגריל כבוי</string>
+    <string name="action_unreachable">אין חיבור לגריל כרגע</string>
+    <string name="settings_theme">מראה</string>
+    <string name="theme_system">כמו בטלפון</string>
+    <string name="theme_light">בהיר</string>
+    <string name="theme_dark">כהה</string>
+    <string name="key_replace">החלפת מפתח</string>
+
+    <!-- cook by thermometer -->
+    <string name="finish_title">מתי לסיים</string>
+    <string name="finish_probe">כשהבשר מוכן</string>
+    <string name="finish_time">לפי זמן</string>
+    <string name="sheet_probe">מדחום</string>
+    <string name="sheet_doneness">מידת עשייה</string>
+    <string name="doneness_rare">נא</string>
+    <string name="doneness_medium_rare">מדיום-רייר</string>
+    <string name="doneness_medium">מדיום</string>
+    <string name="doneness_medium_well">מדיום-וול</string>
+    <string name="doneness_well">עשוי היטב</string>
+    <string name="probe_not_reading">המדחום הזה לא מחובר כרגע</string>
+    <string name="auto_stop_note">הגריל ייעצר ב-%1$s, ובמנוחה הבשר יגיע ל-%2$s</string>
+    <string name="time_limit">הגבלת זמן</string>
+    <string name="time_limit_off_hint">בלי הגבלה (לכל היותר %1$s)</string>
+    <string name="summary_until_probe">עד ש%1$s מגיע ל-%2$s</string>
+    <string name="eta_to_pull">בערך עוד %1$s עד ההוצאה</string>
+    <string name="auto_stopped">הבשר הגיע לטמפרטורת ההוצאה, והגריל נעצר</string>
+
+    <!-- Stop confirmation -->
+    <string name="confirm_stop_title">לעצור את הבישול?</string>
+    <string name="confirm_stop_hint">הגריל יפסיק לחמם. אפשר להתחיל שוב מתי שרוצים.</string>
+    <string name="keep_cooking">להמשיך לבשל</string>
+
+    <!-- Notifications -->
+    <string name="settings_notify">התראות</string>
+    <string name="settings_notify_hint">כשהבישול מתחיל, כשהגריל חם, כשצריך להפוך או להוציא, וכשהגריל כבה</string>
+    <string name="on">פועלות</string>
+    <string name="off">כבויות</string>
+    <string name="notif_channel_alerts">רגעים בבישול</string>
+    <string name="notif_channel_alerts_hint">התחלה, גריל חם, להפוך, להוציא, סיום</string>
+    <string name="notif_channel_live">בישול פעיל</string>
+    <string name="notif_channel_live_hint">כרטיס שקט שמראה את הבישול כשהאפליקציה סגורה</string>
+    <string name="notif_started">הגריל התחיל לעבוד</string>
+    <string name="notif_hot">הגריל חם</string>
+    <string name="notif_hot_text">החימום הסתיים (%1$s). אפשר להכניס את האוכל</string>
+    <string name="notif_flip_text">הגריל מבקש להפוך את האוכל</string>
+    <string name="notif_off">הגריל כבה</string>
+    <string name="notif_off_text">המסך של הגריל נכבה. אפשר להפעיל אותו שוב מהאפליקציה, ב-Bluetooth או דרך הענן</string>
+    <string name="notif_pull_soon">עוד רגע להוציא</string>
+    <string name="notif_pull_soon_text">%1$s ב-%2$s, ההוצאה ב-%3$s. כדאי להתכונן</string>
+    <string name="notif_pull_now">להוציא עכשיו</string>
+    <string name="notif_pull_now_text">%1$s הגיע לטמפרטורת ההוצאה והגריל נעצר. במנוחה הבשר יגיע ל-%2$s</string>
+    <string name="notif_live_grill">גריל %1$s</string>
+
+    <!-- Home, redesigned: plan in place, cook under way -->
+    <string name="ignite">הדלק את הגריל</string>
+    <string name="ignite_short">הדלק</string>
+    <string name="confirm_ignite_title">להדליק את הגריל?</string>
+    <string name="confirm_ignite_hint">ודא שהמכסה סגור ושאין ליד הגריל שום דבר דליק. הגריל יתחיל לחמם מיד.</string>
+    <string name="sum_finish">מסיים</string>
+    <string name="sum_probe">%1$s ב-%2$s</string>
+    <string name="sum_on">פועל</string>
+    <string name="sum_off">כבוי</string>
+    <string name="finish_by">לפי %1$s</string>
+    <string name="eta_short">עוד כ-%1$s</string>
+    <string name="pull_and_target">הוצאה ב-%1$s · יעד %2$s</string>
+    <string name="time_title">זמן</string>
+    <string name="ends_at">מסתיים ב-%1$s</string>
+    <string name="timer_after_preheat">הטיימר יתחיל אחרי החימום</string>
+    <string name="preheat_title">חימום מוקדם</string>
+    <string name="change_while_cooking">שינוי תוך כדי</string>
+    <string name="change_what">עוצמה · זמן · עשן</string>
+    <string name="conn_commands_auto">פקודות יוצאות ב-Bluetooth, ובענן כשאין</string>
+    <string name="conn_commands_ble">פקודות יוצאות ב-Bluetooth בלבד</string>
+    <string name="conn_commands_cloud">פקודות יוצאות דרך הענן בלבד</string>
+    <string name="conn_refresh">רענן עכשיו</string>
+
+    <!-- Settings, redesigned -->
+    <string name="section_cooking">בישול</string>
+    <string name="section_grill">הגריל</string>
+    <string name="section_general">כללי</string>
+    <string name="carryover_title">עלייה במנוחה</string>
+    <string name="carryover_hint">כמה הבשר מוסיף אחרי ההוצאה. הגריל נעצר ביעד פחות זה</string>
+    <string name="key_ok">טעון</string>
+    <string name="ext_none_short">לא הוגדר</string>
+    <string name="ext_add">הוסף</string>
+    <string name="theme_system_short">מערכת</string>
+    <string name="account_connected">מחובר</string>
+    <string name="account_hint">החשבון נותן שליטה דרך הענן, גם כשאתה רחוק מהגריל</string>
+    <string name="channel_auto_hint">Bluetooth כשהגריל קרוב, ענן כשהוא רחוק. הכי אמין.</string>
+    <string name="channel_ble_hint">רק Bluetooth: עובד ליד הגריל, בלי אינטרנט ובלי חשבון.</string>
+    <string name="channel_cloud_hint">רק ענן: עובד מכל מקום, דרך חשבון Ninja.</string>
+
+    <!-- Starting, skip, wake, auto-stop safety -->
+    <string name="starting_sending">שולח לגריל…</string>
+    <string name="starting_waiting">הגריל קיבל, ממתין שיתחיל לחמם…</string>
+    <string name="lid_open_title">המכסה פתוח</string>
+    <string name="lid_open_text">סגור את המכסה. הגריל יתחיל לחמם ברגע שייסגר</string>
+    <string name="starting_elapsed">עברו %1$s</string>
+    <string name="starting_slow">הגריל עוד לא הגיב. ודא שהוא דלוק, שהמכסה סגור ושאתה בטווח</string>
+    <string name="starting_cancel">בטל</string>
+    <string name="start_unconfirmed">הגריל לא אישר שהתחיל לבשל. כדאי לבדוק אותו</string>
+    <string name="skip_ignition">דלג על ההצתה</string>
+    <string name="confirm_wake_title">להפעיל את הגריל?</string>
+    <string name="confirm_wake_hint">המסך של הגריל יידלק. הוא לא יתחיל לחמם עד שתדליק בישול.</string>
+    <string name="wake_short">הפעל</string>
+    <string name="notif_stop_failed">הגריל לא נעצר!</string>
+    <string name="notif_stop_failed_text">%1$s הגיע לטמפרטורת ההוצאה, אבל אין חיבור לגריל כדי לעצור אותו. ממשיך לנסות. כדאי לעצור אותו ידנית</string>
+
+    <!-- Mockup 4: the planner as a panel, the heat card, the end of a cook -->
+    <string name="cell_heat">חום</string>
+    <string name="cell_range">%1$s–%2$s</string>
+    <string name="cell_custom">מותאם</string>
+    <string name="cell_cap">תקרה</string>
+    <string name="cell_time_left">נשאר</string>
+    <string name="cell_hm">שעות:דקות</string>
+    <string name="cap_max">מקסימום</string>
+    <string name="cap_limit">מגבלת זמן</string>
+    <string name="cap_hint">בלי לגעת, הגריל עוצר לכל המאוחר אחרי %1$s. אפשר להוריד כדי להגביל.</string>
+    <string name="pull_at">הוצאה ב־</string>
+    <string name="resting">במנוחה</string>
+    <string name="target_word">יעד</string>
+    <string name="sum_probe_pull">%1$s · הוצאה %2$s · יעד %3$s</string>
+    <string name="woodfire_always">תמיד במעשנה</string>
+    <string name="woodfire_on">פלטים בקופסה</string>
+    <string name="opt_off">כבוי</string>
+    <string name="skip_tile">דילוג על חימום</string>
+    <string name="skip_on">כשהחימום מתחיל</string>
+    <string name="target_short">יעד %1$s</string>
+    <string name="cooling">מתקרר</string>
+    <string name="igniting">מצית את הפלטים</string>
+    <string name="heating_to">מחמם ל־%1$s</string>
+    <string name="auto_stop_footer">עצירה אוטומטית ב־%1$s</string>
+    <string name="cap_footer">תקרה %1$s</string>
+    <string name="change_open">שינוי</string>
+    <string name="change_title">%1$s · שינוי</string>
+    <string name="finished_auto">נעצר אוטומטית ב־%1$s · %2$s</string>
+    <string name="finished_manual">נעצר ידנית · %1$s</string>
+    <string name="finished_done">הבישול הסתיים · %1$s</string>
+    <string name="probe_now">%1$s עכשיו</string>
+    <string name="rose_resting">עלה %1$s במנוחה</string>
+    <string name="fell_resting">ירד %1$s</string>
+    <string name="cook_time">זמן בישול</string>
+    <string name="close">סגור</string>
+    <string name="ble_phone_off">כבוי בטלפון</string>
+    <string name="bt_off_cloud">Bluetooth כבוי בטלפון, עובדים דרך הענן</string>
+    <string name="bt_off_alone">Bluetooth כבוי בטלפון, ובלי חשבון Ninja אין חיבור לגריל</string>
+    <string name="enable_bt">הפעלה</string>
+
+    <!-- Round 5: power corner, program title, wheels -->
+    <string name="choose_program">בחר תוכנית בישול</string>
+    <string name="power">כוח</string>
+    <string name="sleep_title">כיבוי מרחוק</string>
+    <string name="sleep_hint">הגריל נכבה לבד אחרי כ-10 דקות בלי שימוש. בגריל יש פקודת כיבוי (SET_GrillPower), אבל עוד לא מצאנו איך שולחים אותה בבטחה. כשנבדוק אותה יחד ליד הגריל, הכפתור הזה יכבה אותו.</string>
+    <string name="got_it">הבנתי</string>
+    <string name="mode_switch_note">מצב חדש יישלח לגריל כתוכנית חדשה (ייתכן שיחמם מחדש)</string>
+    <string name="default_word">ברירת מחדל</string>
+
+    <!-- Tempwise TNT-2BW, the panel clock -->
+    <string name="probe_white">לבן</string>
+    <string name="probe_black">שחור</string>
+    <string name="ext_in_base">בבסיס</string>
+    <string name="ext_not_heard">לא שומע את הבסיס כרגע (כבוי או רחוק)</string>
+    <string name="ext_base_battery">סוללת הבסיס %1$d%%</string>
+    <string name="ext_swap">החלף צבעים (לבן ↔ שחור)</string>
+    <string name="left_caption">נשארו %1$s</string>
+</resources>

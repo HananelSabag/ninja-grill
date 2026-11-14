@@ -1,0 +1,6 @@
+<!-- Line icon (smoker). Tint at use site. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:pathData="M8,20c0,-2 2,-2 2,-4s-2,-2 -2,-4s2,-2 2,-4M14,20c0,-2 2,-2 2,-4s-2,-2 -2,-4s2,-2 2,-4" android:strokeColor="#FFFFFFFF" android:strokeWidth="2"
+        android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000"/>
+</vector>

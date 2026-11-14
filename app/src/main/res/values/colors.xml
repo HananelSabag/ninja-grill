@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window colours match ui/theme LightGrill / DarkGrill so the first frame has no flash. -->
+    <color name="bg">#FFD8EEFF</color>
+    <color name="launcher_bg_top">#FF3C6C9C</color>
+    <color name="launcher_bg_bottom">#FF1F4469</color>
+</resources>

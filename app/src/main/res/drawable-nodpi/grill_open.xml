@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The grill, lid open: same canvas and the same base and panel as grill_closed.xml, so the lid
+  opening never moves the live display GrillCard.kt draws over it.
+  A local build can swap in its own picture: app/src/debug/res/drawable-nodpi/grill_open.png.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="720dp" android:height="715dp"
+    android:viewportWidth="720" android:viewportHeight="715">
+
+    <!-- Ground shadow -->
+    <path android:fillColor="#000000" android:fillAlpha="0.16"
+        android:pathData="M60,704a300,9 0,1 0,600 0a300,9 0,1 0,-600 0z"/>
+
+    <!-- Side smoke box (right) -->
+    <path android:fillColor="#2B2F35" android:pathData="M598,262h80a14,14 0,0 1,14 14v244h-94z"/>
+    <path android:fillColor="#3A3F46" android:pathData="M688,394h18a5,5 0,0 1,5 5v18a5,5 0,0 1,-5 5h-18z"/>
+
+    <!-- The lid, swung up: its rim, gasket and the steel inside -->
+    <path android:fillColor="#23272C"
+        android:pathData="M92,8h536a34,34 0,0 1,34 34v260a34,34 0,0 1,-34 34h-536a34,34 0,0 1,-34 -34v-260a34,34 0,0 1,34 -34z"/>
+    <path android:fillColor="#0F1114"
+        android:pathData="M108,24h504a28,28 0,0 1,28 28v240a28,28 0,0 1,-28 28h-504a28,28 0,0 1,-28 -28v-240a28,28 0,0 1,28 -28z"/>
+    <path android:pathData="M112,32h496a24,24 0,0 1,24 24v232a24,24 0,0 1,-24 24h-496a24,24 0,0 1,-24 -24v-232a24,24 0,0 1,24 -24z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="32" android:endX="0" android:endY="312">
+                <item android:offset="0" android:color="#FFDCE1E6"/>
+                <item android:offset="1" android:color="#FF9AA2AB"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Heating element -->
+    <path android:strokeColor="#5A6068" android:strokeWidth="7" android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M226,62L156,62Q136,62 136,82L136,150Q136,170 156,170L222,170"/>
+    <!-- Convection fan behind its guard -->
+    <path android:fillColor="#B7BDC4" android:strokeColor="#868E97" android:strokeWidth="3"
+        android:pathData="M282,118a78,78 0,1 0,156 0a78,78 0,1 0,-156 0z"/>
+    <path android:strokeColor="#6F7780" android:strokeWidth="3" android:fillColor="#00000000"
+        android:pathData="M298,118a62,62 0,1 0,124 0a62,62 0,1 0,-124 0zM316,118a44,44 0,1 0,88 0a44,44 0,1 0,-88 0zM334,118a26,26 0,1 0,52 0a26,26 0,1 0,-52 0zM360,56v124M298,118h124M316.2,74.2l87.6,87.6M403.8,74.2l-87.6,87.6"/>
+    <path android:fillColor="#5E666F" android:pathData="M352,118a8,8 0,1 0,16 0a8,8 0,1 0,-16 0z"/>
+    <!-- Woodfire pellet box -->
+    <path android:fillColor="#A9B0B8" android:strokeColor="#7C848D" android:strokeWidth="2"
+        android:pathData="M206,206h62a6,6 0,0 1,6 6v30a6,6 0,0 1,-6 6h-62a6,6 0,0 1,-6 -6v-30a6,6 0,0 1,6 -6z"/>
+    <path android:fillColor="#7C848D" android:pathData="M214,218h46v14h-46z"/>
+    <!-- Hinges -->
+    <path android:fillColor="#A3ABB4" android:pathData="M184,316h52a4,4 0,0 1,4 4v18a4,4 0,0 1,-4 4h-52a4,4 0,0 1,-4 -4v-18a4,4 0,0 1,4 -4z"/>
+    <path android:fillColor="#A3ABB4" android:pathData="M484,316h52a4,4 0,0 1,4 4v18a4,4 0,0 1,-4 4h-52a4,4 0,0 1,-4 -4v-18a4,4 0,0 1,4 -4z"/>
+
+    <!-- Cooking surface: surround, steel trim, ridged grill plate -->
+    <path android:fillColor="#2A2E34"
+        android:pathData="M54,336h612a24,24 0,0 1,24 24v192h-660v-192a24,24 0,0 1,24 -24z"/>
+    <path android:fillColor="#B9C0C7"
+        android:pathData="M84,350h552a22,22 0,0 1,22 22v138a22,22 0,0 1,-22 22h-552a22,22 0,0 1,-22 -22v-138a22,22 0,0 1,22 -22z"/>
+    <path android:pathData="M92,360h536a18,18 0,0 1,18 18v128a18,18 0,0 1,-18 18h-536a18,18 0,0 1,-18 -18v-128a18,18 0,0 1,18 -18z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="360" android:endX="0" android:endY="524">
+                <item android:offset="0" android:color="#FF2A2E34"/>
+                <item android:offset="1" android:color="#FF15181B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:strokeColor="#3C424A" android:strokeWidth="5" android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M96,376v132M118,376v132M140,376v132M162,376v132M184,376v132M206,376v132M228,376v132M250,376v132M272,376v132M294,376v132M316,376v132M338,376v132M360,376v132M382,376v132M404,376v132M426,376v132M448,376v132M470,376v132M492,376v132M514,376v132M536,376v132M558,376v132M580,376v132M602,376v132M624,376v132"/>
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.05" android:pathData="M92,364h536v34h-536z"/>
+
+    <!-- Base body and feet -->
+    <path android:pathData="M30,548L690,548L668,684Q666,692 656,692L64,692Q54,692 52,684Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="548" android:endX="0" android:endY="692">
+                <item android:offset="0" android:color="#FF2C3036"/>
+                <item android:offset="1" android:color="#FF191C20"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:fillColor="#111316" android:pathData="M92,690h58v14a4,4 0,0 1,-4 4h-50a4,4 0,0 1,-4 -4z"/>
+    <path android:fillColor="#111316" android:pathData="M570,690h58v14a4,4 0,0 1,-4 4h-50a4,4 0,0 1,-4 -4z"/>
+
+    <!-- Control panel (identical to grill_closed.xml) -->
+    <path android:fillColor="#15171A" android:strokeColor="#3D434B" android:strokeWidth="2"
+        android:pathData="M166,558h424a10,10 0,0 1,10 10v84a10,10 0,0 1,-10 10h-424a10,10 0,0 1,-10 -10v-84a10,10 0,0 1,10 -10z"/>
+    <path android:strokeColor="#8C949E" android:strokeWidth="2" android:fillColor="#00000000"
+        android:pathData="M180,590a13,13 0,1 0,26 0a13,13 0,1 0,-26 0z"/>
+    <path android:strokeColor="#C9CFD6" android:strokeWidth="1.8" android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M188.6,585.2a6.5,6.5 0,1 0,8.8 0M193,582v7"/>
+    <path android:strokeColor="#6B737D" android:strokeWidth="1.6" android:strokeLineCap="round" android:fillColor="#00000000"
+        android:pathData="M216,580.6h22M222,586.4h16M218,592.2h20M222,598h16M224,603.8h14M214,609.8h24M220,615.8h18"/>
+    <path android:fillColor="#191B1F" android:pathData="M243,578h9v40h-9z"/>
+    <path android:fillColor="#E8EEF6"
+        android:pathData="M276.5,580C280,588 288,593 288,603C288,610 283,616 276.5,616C270,616 265,610 265,603.5C265,598 268,594 271,591C271,595 273,598 275.5,598.5C274,592 274.5,586 276.5,580Z"/>
+    <path android:fillColor="#0D0F12" android:strokeColor="#2E333A" android:strokeWidth="1.5"
+        android:pathData="M300,574h118a4,4 0,0 1,4 4v41a4,4 0,0 1,-4 4h-118a4,4 0,0 1,-4 -4v-41a4,4 0,0 1,4 -4z"/>
+    <path android:strokeColor="#59606A" android:strokeWidth="1.5" android:fillColor="#00000000"
+        android:pathData="M216,628h34a6,6 0,0 1,0 12h-34a6,6 0,0 1,0 -12zM262,628h34a6,6 0,0 1,0 12h-34a6,6 0,0 1,0 -12zM322,628h34a6,6 0,0 1,0 12h-34a6,6 0,0 1,0 -12zM370,628h34a6,6 0,0 1,0 12h-34a6,6 0,0 1,0 -12z"/>
+    <path android:fillColor="#25292E" android:pathData="M427,600a28,28 0,1 0,56 0a28,28 0,1 0,-56 0z"/>
+    <path android:pathData="M432,600a23,23 0,1 0,46 0a23,23 0,1 0,-46 0z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="440" android:startY="580" android:endX="472" android:endY="622">
+                <item android:offset="0" android:color="#FFF3F5F8"/>
+                <item android:offset="1" android:color="#FF8E97A1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:fillColor="#5D6570" android:pathData="M453.5,582h3v9h-3z"/>
+    <path android:strokeColor="#8C949E" android:strokeWidth="2" android:fillColor="#00000000"
+        android:pathData="M488,589a12,12 0,1 0,24 0a12,12 0,1 0,-24 0z"/>
+    <path android:strokeColor="#6B737D" android:strokeWidth="1.6" android:fillColor="#00000000"
+        android:pathData="M491,625a9,9 0,1 0,18 0a9,9 0,1 0,-18 0zM496,625h8"/>
+</vector>
